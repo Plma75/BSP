@@ -1,7 +1,7 @@
 # BSP
 Blocking your minecraft server plugins to show.
 
-[한국어 README](https://github.com/Plma75/BSP/blob/master/docs/README-kr.md)
+[한국어 README](https://github.com/Plma75/BSP/README-kr.md)
 
 # Features
 * Blocking your minecraft server plugins to show.
