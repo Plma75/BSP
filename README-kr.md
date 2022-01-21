@@ -1,7 +1,7 @@
 # BSP
-Blocking your minecraft server plugins to show.
+서버 플러그인 목록을 다른 일반 유저분들에게 보이지 않게합니다.
 
-[한국어 README](https://github.com/Plma75/BSP/blob/master/docs/README-kr.md)
+[ENGLISH README](https://github.com/Plma75/BSP/README.md)
 
 # 기능
 * 당신의 서버의 플러그인 목록을 일반 유저분들에게 보이지 않게합니다.
