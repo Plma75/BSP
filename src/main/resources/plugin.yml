@@ -1,0 +1,15 @@
+name: BSP
+version: '${project.version}'
+main: com.plma75.bsp.BSP
+authors: [ Plma75 ]
+description: Block the plugin display.
+website: https://github.com/Plma75
+commands:
+  bsp:
+    description: Commands of BSP.
+permissions:
+  bsp.*:
+    children:
+      bsp.use:
+        description: Use BSP plugin.
+
