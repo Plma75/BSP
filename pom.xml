@@ -6,7 +6,7 @@
 
     <groupId>com.plma75</groupId>
     <artifactId>BSP</artifactId>
-    <version>1.0.0-Alpha1</version>
+    <version>1.0.0-Alpha2</version>
     <packaging>jar</packaging>
 
     <name>BSP</name>

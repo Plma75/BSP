@@ -3,6 +3,7 @@ package com.plma75.bsp;
 import com.plma75.bsp.API.BlockPluginEvent;
 import com.plma75.bsp.Events.EvtPlayerCommandPreprocess;
 import com.plma75.bsp.Events.EvtTabComplete;
+import com.plma75.bsp.Utils.UpdateChecker;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
@@ -68,6 +69,20 @@ public final class BSP extends JavaPlugin {
         // Register Events \\
         Bukkit.getPluginManager().registerEvents(new EvtTabComplete(), this);
         Bukkit.getPluginManager().registerEvents(new EvtPlayerCommandPreprocess(), this);
+
+        // Update Check \\
+        if (this.getConfig().getBoolean("setting.update-checker")) {
+            new UpdateChecker(this, 99380).getVersion(version -> {
+                if (this.getDescription().getVersion().equals(version)) {
+                    logger.sendMessage(prefix + "There is not a new update available.");
+                } else {
+                    logger.sendMessage(prefix + "There is a new update available: " + ChatColor.AQUA + version);
+                }
+            });
+        } else {
+            logger.sendMessage(prefix + "Updater-Checker is disabled.");
+        }
+
     }
 
     public String getPrefix() {

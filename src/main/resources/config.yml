@@ -1,2 +1,5 @@
 message:
   NO-PERMISSION: '&cYou do not have the required permissions to execute this command.'
+
+setting:
+  update-checker: true

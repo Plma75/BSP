@@ -13,6 +13,8 @@ import java.util.function.Consumer;
 
 public class UpdateChecker {
 
+    private final String prefix = BSP.getInstance().getPrefix();
+
     private final JavaPlugin plugin;
     private final int resourceId;
 
@@ -28,7 +30,7 @@ public class UpdateChecker {
                     consumer.accept(scanner.next());
                 }
             } catch (IOException exception) {
-                Bukkit.getConsoleSender().sendMessage(BSP.getInstance().getPrefix() + ChatColor.RED + "Unable to check for update: " + exception.getMessage());
+                plugin.getLogger().warning("Unable to check for updates: " + exception.getMessage());
             }
         });
     }
