@@ -12,7 +12,7 @@ Install the BSP from [here](https://github.com/Plma75/BSP/releases)
 
 Put the file in 'Server Folder/plugins/'
 
-restarting your server.
+restart your server.
 
 # Use Custom Event
 
